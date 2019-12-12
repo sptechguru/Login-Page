@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+    width: 650px;
+}
+
+.card > .left {
+    background-image: url('https://images.unsplash.com/photo-1517256064527-09c73fc73e38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');
+    background-position: bottom;
+    background-size: cover;
+}
+
+.card > .right {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+form {
+    width: 100%;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.form-input > label {
+    color: #2C3A47;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.form-input > input[type="text"]:focus + label,
+.form-input > input[type="password"]:focus + label {
+    color: #FD7272;
+}
+
+form input {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-input > input[type="text"],
+.form-input > input[type="password"] {
+    border: none;
+    border-bottom: 2px solid #2C3A47;
+    height: 30px;
+    outline: none;
+    transition: border-bottom .3s ease-in-out;
+}
+
+.form-input > input[type="text"]:focus,
+.form-input > input[type="password"]:focus {
+    border-bottom: 2px solid #FD7272;
+}
+
+.btn {
+    background-color: #2C3A47;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 40px;
+    line-height: 40px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #FD7272;
+}
+
+.forgot-password {
+    color: #000;
+    font-size: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color .3s ease-in-out;
+}
+
+.forgot-password:hover {
+  color: #FD7272;
+}
